@@ -226,6 +226,12 @@ body {
     padding: 30px;
 }
 
+@media (max-width: 959px) {
+    header {
+        display: none;
+    }
+}
+
 .top-header {
     display: flex;
     padding: 40px 30px 10px;
@@ -272,6 +278,12 @@ body {
         margin-right: 25px;
     }
 }
+
+@media (max-width: 959px) {
+    .nav__wrapper {
+        display: none;
+    }
+}
 /*----------------------------------------------------------*/
 .profile__wrap {
     display: flex;
@@ -309,6 +321,7 @@ body {
         display: none;
     }
 }
+
 
 /*----------------------------------------------------------*/
   
