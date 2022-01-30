@@ -283,8 +283,18 @@ body {
     }
 }
 
+.top-header__info-icon {
+    padding: 2px 9px ;
+    border: 1px solid #333333;
+    border-radius: 50%;
+}
+
 .top-header__contact {
     display: flex;
+}
+
+.top-header__contact-item img {
+    height: 15px;
 }
 
 .top-header__contact-item:not(.top-header__contact-item:last-child) {
@@ -313,9 +323,24 @@ body {
     display: flex;
 }
 
+.nav__item {
+    position: relative;
+}
+
+.nav__item:hover::before {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+}
+
 .nav__item:not(.nav__item:last-child) {
     margin-right: 50px;
 }
+
 
 @media (max-width: 1139px) {
     .nav__item:not(.nav__item:last-child) {
