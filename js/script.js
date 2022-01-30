@@ -49,7 +49,8 @@ cardsWrapper.innerHTML += allCards;
     openPopUp.addEventListener('click', function(){
         popUp.classList.add('active_popup');
 
-        let imageActive = openPopUp.previousElementSibling;
+
+        let imageActive = openPopUp.querySelector("img");
         urlImg.value = imageActive.src;
     })
   }
