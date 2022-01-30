@@ -227,8 +227,8 @@ body {
 }
 
 @media (max-width: 959px) {
-    header {
-        display: none;
+    .header {
+        justify-content: center;
     }
 }
 
@@ -237,6 +237,12 @@ body {
     padding: 40px 30px 10px;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 959px) {
+    .top-header {
+        display: none;
+    }
 }
 
 .top-header__contact {
@@ -289,6 +295,13 @@ body {
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 1139px) {
+    .profile__wrap {
+        display: none;
+    }
+}
+
 
 .profile__login {
     margin-right: 50px;
