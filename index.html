@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style-fiomio.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>FioMio || Распродажа принтов</title>
+</head>
+
+<body>
+	<header class="cd-header">
+		<div class="wrapper">
+			<h1 class="hidden">FioMio || Распродажа принтов</h1>
+			<div class="top-header header">
+				<p>Будни с 10.00 до 20.00</p>
+				<div class="top-header__contact">
+					<p class="top-header__contact-item">Москва</p>
+					<a class="top-header__contact-item" href="href="tel:+79825704044"">8 (982) 570-40-44</a>
+					<a class="top-header__contact-item" href="#">Заказать звонок</a>
+				</div>
+				<p>Статус заказа</p>
+			</div>	
+			<div class="bottom-header header">
+				<div class="bottom-header__logo">
+					<a href="https://fiomio.ru/"><img src="files/logos/logo.png" alt="logotype"></a>
+				</div>
+				
+				<nav class="bottom-header__nav">
+					<ul class="nav__wrapper">
+						<li class="nav__item"><a href="https://fiomio.ru/product-category/birki-dlya-hand-made/nabory-dlya-masterov_1646/">Каталог</a></li>
+						<li class="nav__item"><a href="https://fiomio.ru/#magentablock">Скидки</a></li>
+						<li class="nav__item"><a href="https://fiomio.ru/#conttoscroll">Контакты</a></li>
+						<li class="nav__item"><a href="#">Создать дизайн</a></li>
+					</ul>
+				</nav>
+				<div class="profile__wrap">
+					<a class="profile__login" href="">Войти</a>
+					<a class="profile__reg" href="">Регистрация</a>
+				</div>
+			</div>	
+		</div>
+		<div class="banner-wrapper">
+			<!-- <img src="files/banner.png" alt=""> -->
+		</div>	
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="filter"><a class="selected" data-type="all">Все изображения</a></li>
+					<li class="filter" data-filter=".fourteen-feb"><a data-type="fourteen-feb">14 февраля</a></li>
+					<li class="filter" data-filter=".twenty-feb"><a data-type="twenty-feb">23 февраля</a></li>
+					<li class="filter" data-filter=".eight-march"><a data-type="eight-march">8 марта</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<div class="wrapper">
+			<section class="cd-gallery">
+				<ul class="cards__wrapper">
+					<li class="mix twenty-feb">
+						<div class="card popup__open"><img src="files/images/aa(1).jpg" alt="" class="card__img"><input type="button" class="card__btn" value="Хочу!"></div>
+					</li>
+					<li class="mix fourteen-feb">
+						<div class="card popup__open"><img src="files/images/dd(1).jpg" alt="" class="card__img"><input type="button" class="card__btn" value="Хочу!"></div>
+					</li>
+			   <!-- <li class="mix fourteen-feb">
+						<div class="card popup__open"><img src="files/images/dd(1).jpg" alt="" class="card__img"><input type="button" class="card__btn" value="Хочу!"></div>
+					</li> -->
+				</ul>
+			</section> 
+		</div>
+
+		
+		<div class="popup" id="popup">
+			<div class="popup__container">
+				<div class="popup__body" >
+					<p class="popup__title">Оставить заказ</p>
+					<form class="card__form" action="telegram.php" method="POST">
+						<div class="radio__wrap">
+							<input type="text" class="hidden url_img" name="image_url">
+							<p class="radio__title">Размер печати</p>
+							<div> <!-- onchange="calc()" -->
+								<label class="format"><input onchange="calc()" name="format" type="radio" value="А6" data-format-cost="500">А6</label>
+								<label class="format"><input onchange="calc()" name="format" type="radio" value="А5" data-format-cost="600">А5</label>
+								<label class="format"><input onchange="calc()" name="format" type="radio" value="А4" data-format-cost="700">А4</label>
+								<label class="format"><input onchange="calc()" name="format" type="radio" value="А3" data-format-cost="800">А3</label>
+							</div>
+						</div>
+						<input class="count text-input" type="number" min="1" max="50" name="count" placeholder="Введите кол-во">
+						<input required id="phone" class="tel text-input" type="tel" name="user_phone" placeholder="Введите телефон для связи">
+						<p class="card__sum">0 ₽</p>
+						<input class="form__btn" type="submit" value="Отправить">
+					</form>
+					<div class="popup__close">&#10006</div>
+				</div>
+			</div>
+		</div>
+	</main> <!-- cd-main-content -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/script.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+</body>
+
+</html>
