@@ -364,18 +364,18 @@ body {
     width: 100%;
     background-color: #fff;
     height: 140px;
-    background: url(../files/bannerL.png) no-repeat center center;
+    background: url(../files/banner3.png) no-repeat center center;
 }
 
 @media (max-width: 1139px) {
     .banner-wrapper {
-        background: url(../files/bannerm.png) no-repeat center center;
+        background: url(../files/banner2.png) no-repeat center center;
     }
 }
 
 @media (max-width: 689px) {
     .banner-wrapper {
-        background: url(../files/banners.png) no-repeat center center;
+        background: url(../files/banner4.png) no-repeat center center;
     }
 }
 
